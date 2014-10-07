@@ -9,4 +9,4 @@ var s = "name = #{name} , age = #{age}"
 // console.log(s.fmt);
 // console.log(eval(s.fmt));
 
-console.log(eval(inter("name = #{name} , age = #{age}")));
+console.log(eval("name = #{name} , age = #{age}".inter));

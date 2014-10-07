@@ -59,9 +59,15 @@ Block.prototype.handle = function() {
 
 Block.prototype.handleString = function(end) {
     var start = this.consumed + 1;
-    if (!end) end = this.str.length;
 
-    var s = this.str.slice(start, end);
+    var s = null;
+    if (end){ // end exists
+        s = this.str.slice(start, end);
+    }
+    else{
+        s = this.str.slice(start)
+    }
+
     var code = s
         .replace(/"/g, '\\"')
         .replace(/'/g, "\\'")
