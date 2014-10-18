@@ -28,6 +28,7 @@ By default,it will define the `inter` property,so example above sames to
 
 ##@ support
 `#{ @name }` -> `this.name`
+
 `#{ @['content-type'] }` -> `this['content-type']`
 
 
