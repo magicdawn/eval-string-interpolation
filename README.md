@@ -26,6 +26,11 @@ By default,it will define the `inter` property,so example above sames to
 `console.log(eval("name = #{name} , age = #{age}".inter));`
 
 
+##@ support
+`#{ @name }` -> `this.name`
+`#{ @['content-type'] }` -> `this['content-type']`
+
+
 #Other Implations
 - [Fomatto](https://github.com/BonsaiDen/Fomatto) use {} as placeholder
 - [rssi](https://github.com/mvasilkov/rssi) 
@@ -38,9 +43,6 @@ Or maybe you are looking for  a simple function that can process like
 some_func("name = #{name} , age = #{age}")
 ```
 no way...
-
-#To Do
-- add `@` support (暂时要做课设呀...搞完再说)
 
 #License
 the MIT License. Copyright 2014 `magicdawn<784876393@qq.com>`
