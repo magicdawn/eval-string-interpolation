@@ -37,6 +37,11 @@ Block.prototype.handle = function() {
                 var sec = this.getSecond(fi);
                 var variable = this.str.slice(fi + 1, sec).trim();
 
+                // @support
+                variable = variable
+                    .replace(/@(?!\[)/g,'this.')
+                    .replace(/@(?=\[)/g,'this')
+
                 this.code += '+' + variable + '+';
                 this.consumed = sec;
 
@@ -60,20 +65,18 @@ Block.prototype.handle = function() {
 Block.prototype.handleString = function(end) {
     var start = this.consumed + 1;
 
-    var s = null;
-    if (end){ // end exists
-        s = this.str.slice(start, end);
-    }
-    else{
-        s = this.str.slice(start)
+    if (typeof end === 'undefined' && !end){ // end not exists
+        end = this.str.length
     }
 
+    var s = this.str.slice(start, end);
     var code = s
         .replace(/"/g, '\\"')
         .replace(/'/g, "\\'")
         .replace(/\r?\n/g, '\\n');
 
     this.code += '"' + code + '"';
+    this.consumed = end - 1;
 };
 
 Block.prototype.getSecond = function(fi_index) {

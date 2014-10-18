@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/magicdawn/eval-string-interpolation/issues"
   },
-  "homepage": "https://github.com/magicdawn/eval-string-interpolation"
+  "homepage": "https://github.com/magicdawn/eval-string-interpolation",
+  "devDependencies": {
+    "mocha": "^1.21.5"
+  }
 }
