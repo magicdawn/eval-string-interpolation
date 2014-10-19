@@ -32,7 +32,7 @@ By default,it will define the `inter` property,so example above sames to
 `#{ @['content-type'] }` -> `this['content-type']`
 
 
-#Other Implations
+#Other Implementations
 - [Fomatto](https://github.com/BonsaiDen/Fomatto) use {} as placeholder
 - [rssi](https://github.com/mvasilkov/rssi) 
 - [string-interpolate](https://github.com/alexeyraspopov/string-interpolate)
