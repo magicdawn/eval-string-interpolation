@@ -37,13 +37,13 @@ By default,it will define the `inter` property,so example above sames to
 - [rssi](https://github.com/mvasilkov/rssi) 
 - [string-interpolate](https://github.com/alexeyraspopov/string-interpolate)
 
-Fomatto works like a formatter, rssi & string-interpolate looks like a template engine, I can do same work with ejs/jade/razor-tmpl
+Fomatto works like a formatter, rssi & string-interpolate looks like a template engine, it's not so lightweight.
 
 Or maybe you are looking for  a simple function that can process like
 ```js
 some_func("name = #{name} , age = #{age}")
 ```
-no way...
+no way... since I can't find a way to access the `current scope`
 
 #License
 the MIT License. Copyright 2014 `magicdawn<784876393@qq.com>`
