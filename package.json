@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/magicdawn/eval-string-interpolation",
   "devDependencies": {
-    "mocha": "^1.21.5"
+    "mocha": "^3.2.0"
   }
 }
