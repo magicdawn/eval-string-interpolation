@@ -1,5 +1,7 @@
 #eval-string-interpolation
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/magicdawn/eval-string-interpolation.svg)](https://greenkeeper.io/)
+
 Ruby style string-interpolation for nodejs with `eval` function
 
 #Install
